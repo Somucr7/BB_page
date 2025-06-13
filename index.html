@@ -83,7 +83,7 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .chain {
+    /* .chain {
       position: absolute;
       width: 2px;
       height: 150px;
@@ -103,18 +103,18 @@
     }
 
     .chain::before { top: 20px; }
-    .chain::after { top: 50px; }
+    .chain::after { top: 50px; } */
 
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
+      50% { transform: translateY(-15px); }
     }
 
-    .hanging-image:nth-child(1) { left: 5%; top: 20%; transform: rotate(-10deg); }
-    .hanging-image:nth-child(2) { right: 35%; top: 22%; transform: rotate(15deg); }
-    .hanging-image:nth-child(3) { left: 5%; top: 91%; transform: rotate(15deg); }
-    .hanging-image:nth-child(4) { right: 5%; top: 91%; transform: rotate(-15deg); }
-    .hanging-image:nth-child(5) { left: 75%; top: 30%; transform: rotate(10deg); }
+    .hanging-image:nth-child(1) { left: 5%; top: 8%; transform: rotate(-10deg); }
+    .hanging-image:nth-child(2) { right: 40%; top: 10%; transform: rotate(15deg); }
+    .hanging-image:nth-child(3) { left: 3%; top: 75%; transform: rotate(15deg); }
+    .hanging-image:nth-child(4) { right: 3%; top: 75%; transform: rotate(-15deg); }
+    .hanging-image:nth-child(5) { left: 75%; top: 8%; transform: rotate(10deg); }
 
     /* Flower rain styles */
     .flower {
@@ -154,11 +154,11 @@
   <!-- Birthday Page -->
   <div id="birthday-page" class="page">
     <!-- Hanging Images -->
-    <div class="hanging-image"><div class="chain"></div><img src="New folder (2)/photo1.png" alt="Chechi"></div>
-    <div class="hanging-image"><div class="chain"></div><img src="New folder (2)/photo2.png" alt="Chechi"></div>
-    <div class="hanging-image"><div class="chain"></div><img src="New folder (2)/photo3.png" alt="Chechi"></div>
-    <div class="hanging-image"><div class="chain"></div><img src="New folder (2)/photo4.png" alt="Chechi"></div>
-    <div class="hanging-image"><div class="chain"></div><img src="New folder (2)/photo5.png" alt="Chechi"></div>
+    <div class="hanging-image"><div class="chain"></div><img src="pics/IMG_0853.png" alt="Chechi"></div>
+    <div class="hanging-image"><div class="chain"></div><img src="pics/IMG_0867.png" alt="Chechi"></div>
+    <div class="hanging-image"><div class="chain"></div><img src="pics/IMG_1191.png" alt="Chechi"></div>
+    <div class="hanging-image"><div class="chain"></div><img src="pics/IMG-20230810-WA0021.png" alt="Chechi"></div>
+    <div class="hanging-image"><div class="chain"></div><img src="pics/IMG_7347 2.png" alt="Chechi"></div>
 
     <h2 class="front-title"> ചേച്ചി, നീ അത്ഭുതമാണ് </h2>
     <p class="front-title" style="font-size: 1.2rem; color: #8b008b;">🎉ജന്മദിനാശംസകൾ ചേച്ചി! ദൈവത്തിന്റെ അനുഗ്രഹം എപ്പോഴും ലഭിക്കട്ടെ. സുഖം, സമാധാനം, സന്തോഷം നിറഞ്ഞ ഒരു ജീവിതം നിനക്കായിരിക്കട്ടെ. നിനക്ക് എല്ലാ സന്തോഷങ്ങളും സഫലതകളും നിറഞ്ഞ ഒരു പുതുവർഷം ആവട്ടെ!🎉</p>
@@ -190,7 +190,7 @@
     function startFlowerRain() {
       setInterval(() => {
         const flower = document.createElement("img");
-        flower.src = "New folder (3)/yellow-gerbera-daisy-flower - Edited.png"; // your flower image path
+        flower.src = "images/yellow-gerbera-daisy-flower - Edited.png"; // your flower image path
         flower.className = "flower";
         flower.style.left = Math.random() * window.innerWidth + "px";
         flower.style.animationDuration = (4 + Math.random() * 6) + "s";
